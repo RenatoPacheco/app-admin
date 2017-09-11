@@ -7,18 +7,16 @@ import { InstitutoAlteraComponent } from './pages/instituto/instituto-altera/ins
 import { InstitutoInsereComponent } from './pages/instituto/instituto-insere/instituto-insere.component';
 import { InstitutoDetalheComponent } from './pages/instituto/instituto-detalhe/instituto-detalhe.component';
 
-const appRoutes: Routes = [
-  { path: 'instituto', component: InstitutoComponent, children: [
-    { path: 'novo', component: InstitutoInsereComponent },
-    { path: 'altera', component: InstitutoAlteraComponent },
-    { path: 'detalhe', component: InstitutoDetalheComponent }
-  ]},
-  { path: '', component: HomeComponent },
-  { path: '**', component: HomeComponent }
-];
-
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes, {useHash: false})],
+  imports: [RouterModule.forRoot([
+    { path: 'instituto', component: InstitutoComponent, children: [
+      { path: 'novo', component: InstitutoInsereComponent },
+      { path: 'altera', component: InstitutoAlteraComponent },
+      { path: 'detalhe', component: InstitutoDetalheComponent }
+    ]},
+    { path: '', component: HomeComponent },
+    { path: '**', component: HomeComponent }
+  ], {useHash: false})],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
