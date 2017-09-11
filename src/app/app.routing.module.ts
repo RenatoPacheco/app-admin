@@ -8,10 +8,11 @@ import { InstitutoInsereComponent } from './pages/instituto/instituto-insere/ins
 import { InstitutoDetalheComponent } from './pages/instituto/instituto-detalhe/instituto-detalhe.component';
 
 const appRoutes: Routes = [
-  { path: 'instituto', component: InstitutoComponent },
-  { path: 'instituto/novo', component: InstitutoInsereComponent },
-  { path: 'instituto/altera', component: InstitutoAlteraComponent },
-  { path: 'instituto/detalhe', component: InstitutoDetalheComponent },
+  { path: 'instituto', component: InstitutoComponent, children: [
+    { path: 'novo', component: InstitutoInsereComponent },
+    { path: 'altera', component: InstitutoAlteraComponent },
+    { path: 'detalhe', component: InstitutoDetalheComponent }
+  ]},
   { path: '', component: HomeComponent },
   { path: '**', component: HomeComponent }
 ];

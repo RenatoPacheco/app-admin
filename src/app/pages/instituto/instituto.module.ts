@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { InstitutoComponent } from './instituto.component';
 import { InstitutoInsereComponent } from './instituto-insere/instituto-insere.component';
@@ -8,7 +9,8 @@ import { InstitutoDetalheComponent } from './instituto-detalhe/instituto-detalhe
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   declarations: [
     InstitutoComponent,
