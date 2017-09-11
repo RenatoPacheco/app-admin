@@ -8,7 +8,7 @@ import { InstitutoDetalheComponent } from './instituto-detalhe/instituto-detalhe
 
 @NgModule({
   imports: [RouterModule.forChild([
-    { path: 'instituto', component: InstitutoComponent, children: [
+    { path: '', component: InstitutoComponent, children: [
       { path: 'novo', component: InstitutoInsereComponent },
       { path: 'altera', component: InstitutoAlteraComponent },
       { path: 'detalhe', component: InstitutoDetalheComponent }
