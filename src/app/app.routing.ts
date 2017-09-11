@@ -12,4 +12,4 @@ import { HomeComponent } from './home/home.component';
   ], {useHash: true})],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRouting {}
