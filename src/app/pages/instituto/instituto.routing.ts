@@ -10,8 +10,8 @@ import { InstitutoDetalheComponent } from './instituto-detalhe/instituto-detalhe
   imports: [RouterModule.forChild([
     { path: '', component: InstitutoComponent, children: [
       { path: 'novo', component: InstitutoInsereComponent },
-      { path: 'altera', component: InstitutoAlteraComponent },
-      { path: 'detalhe', component: InstitutoDetalheComponent }
+      { path: 'altera/:id', component: InstitutoAlteraComponent },
+      { path: 'detalhe/:id', component: InstitutoDetalheComponent }
     ]}
   ])],
   exports: [RouterModule]
