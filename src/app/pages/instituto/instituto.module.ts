@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { InstitutoRoutingModule } from './instituto.routing.module';
+import { InstitutoRouting } from './instituto.routing';
 import { InstitutoComponent } from './instituto.component';
 import { InstitutoInsereComponent } from './instituto-insere/instituto-insere.component';
 import { InstitutoAlteraComponent } from './instituto-altera/instituto-altera.component';
@@ -11,7 +11,7 @@ import { InstitutoDetalheComponent } from './instituto-detalhe/instituto-detalhe
 @NgModule({
   imports: [
     CommonModule,
-    InstitutoRoutingModule
+    InstitutoRouting
   ],
   declarations: [
     InstitutoComponent,

@@ -16,4 +16,4 @@ import { InstitutoDetalheComponent } from './instituto-detalhe/instituto-detalhe
   ])],
   exports: [RouterModule]
 })
-export class InstitutoRoutingModule {}
+export class InstitutoRouting {}
