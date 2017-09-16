@@ -1,5 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { UrlSerializer } from '@angular/router';
+
+import { LowerCaseUrlSerializer } from './helpers/lower-case-url-serializer';
 
 import { AppRouting } from './app.routing';
 import { AppComponent } from './app.component';
@@ -16,7 +19,12 @@ import { NaoEncontradaComponent } from './nao-encontrada/nao-encontrada.componen
     BrowserModule,
     AppRouting
   ],
-  providers: [],
+  providers: [
+    {
+        provide: UrlSerializer,
+        useClass: LowerCaseUrlSerializer
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
