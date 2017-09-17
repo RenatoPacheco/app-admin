@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { InstitutoRouting } from './instituto.routing';
-import { InstitutoComponent } from './instituto.component';
-import { InstitutoInsereComponent } from './instituto-insere/instituto-insere.component';
-import { InstitutoAlteraComponent } from './instituto-altera/instituto-altera.component';
-import { InstitutoDetalheComponent } from './instituto-detalhe/instituto-detalhe.component';
+import { InstitutoPage } from './instituto.page';
+import { AlteraPage } from './altera/altera.page';
+import { InserePage } from './insere/insere.page';
+import { DetalhePage } from './detalhe/detalhe.page';
 
 @NgModule({
   imports: [
@@ -14,16 +14,10 @@ import { InstitutoDetalheComponent } from './instituto-detalhe/instituto-detalhe
     InstitutoRouting
   ],
   declarations: [
-    InstitutoComponent,
-    InstitutoInsereComponent,
-    InstitutoAlteraComponent,
-    InstitutoDetalheComponent
-  ],
-  exports: [
-    InstitutoComponent,
-    InstitutoInsereComponent,
-    InstitutoAlteraComponent,
-    InstitutoDetalheComponent
+    InstitutoPage,
+    InserePage,
+    AlteraPage,
+    DetalhePage
   ]
 })
 export class InstitutoModule { }
