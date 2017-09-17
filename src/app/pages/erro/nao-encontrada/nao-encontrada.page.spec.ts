@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NaoEncontradaComponent } from './nao-encontrada.component';
+import { NaoEncontradaPage } from './nao-encontrada.page';
 
 describe('NaoEncontradaComponent', () => {
-  let component: NaoEncontradaComponent;
-  let fixture: ComponentFixture<NaoEncontradaComponent>;
+  let component: NaoEncontradaPage;
+  let fixture: ComponentFixture<NaoEncontradaPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NaoEncontradaComponent ]
+      declarations: [ NaoEncontradaPage ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NaoEncontradaComponent);
+    fixture = TestBed.createComponent(NaoEncontradaPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

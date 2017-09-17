@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CursoRouting } from './instituto.routing';
+import { CursoRouting } from './curso.routing';
 import { CursoPage } from './curso.page';
 import { DetalhePage } from './detalhe/detalhe.page';
 import { InserePage } from './insere/insere.page';
