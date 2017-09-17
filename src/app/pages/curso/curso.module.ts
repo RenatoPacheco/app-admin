@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CursoRouting } from './instituto.routing';
-import { CursoComponent } from './curso.component';
-import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
-import { CursoInsereComponent } from './curso-insere/curso-insere.component';
-import { CursoAlteraComponent } from './curso-altera/curso-altera.component';
+import { CursoPage } from './curso.page';
+import { DetalhePage } from './detalhe/detalhe.page';
+import { InserePage } from './insere/insere.page';
+import { AlteraPage } from './altera/altera.page';
 
 @NgModule({
   imports: [
@@ -13,16 +13,10 @@ import { CursoAlteraComponent } from './curso-altera/curso-altera.component';
     CursoRouting
   ],
   declarations: [
-    CursoComponent,
-    CursoDetalheComponent,
-    CursoInsereComponent,
-    CursoAlteraComponent
-  ],
-  exports: [
-    CursoComponent,
-    CursoDetalheComponent,
-    CursoInsereComponent,
-    CursoAlteraComponent
+    CursoPage,
+    DetalhePage,
+    InserePage,
+    AlteraPage
   ]
 })
 export class CursoModule { }
