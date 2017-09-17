@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MinhaContaRouting } from './minha-conta.routing';
 import { MinhaContaPage } from './minha-conta.page';
 import { AutenticacaoPage } from './autenticacao/autenticacao.page';
+import { IndexPage } from './index/index.page';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { AutenticacaoPage } from './autenticacao/autenticacao.page';
   ],
   declarations: [
     MinhaContaPage,
-    AutenticacaoPage
+    AutenticacaoPage,
+    IndexPage
   ]
 })
 export class MinhaContaModule { }
