@@ -6,12 +6,10 @@ import { LowerCaseUrlSerializer } from './helpers/lower-case-url-serializer';
 
 import { AppRouting } from './app.routing';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
