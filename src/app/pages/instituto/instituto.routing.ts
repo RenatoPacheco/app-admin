@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { InstitutoComponent } from './instituto.component';
-import { InstitutoAlteraComponent } from './instituto-altera/instituto-altera.component';
-import { InstitutoInsereComponent } from './instituto-insere/instituto-insere.component';
-import { InstitutoDetalheComponent } from './instituto-detalhe/instituto-detalhe.component';
+import { InstitutoPage } from './instituto.page';
+import { AlteraPage } from './altera/altera.page';
+import { InserePage } from './insere/insere.page';
+import { DetalhePage } from './detalhe/detalhe.page';
 
 @NgModule({
   imports: [RouterModule.forChild([
-    { path: '', component: InstitutoComponent, children: [
-      { path: 'novo', component: InstitutoInsereComponent },
-      { path: 'altera/:id', component: InstitutoAlteraComponent },
-      { path: 'detalhe/:id', component: InstitutoDetalheComponent }
+    { path: '', component: InstitutoPage, children: [
+      { path: 'novo', component: InserePage },
+      { path: 'altera/:id', component: AlteraPage },
+      { path: 'detalhe/:id', component: DetalhePage }
     ]}
   ])],
   exports: [RouterModule]

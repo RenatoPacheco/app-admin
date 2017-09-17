@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-instituto',
-  templateUrl: './instituto.component.html',
-  styleUrls: ['./instituto.component.less']
+  templateUrl: './instituto.page.html',
+  styleUrls: ['./instituto.page.less']
 })
-export class InstitutoComponent implements OnInit {
+export class InstitutoPage implements OnInit {
 
   constructor() { }
 
