@@ -1,0 +1,17 @@
+<h2>
+  Cursos
+</h2>
+<table class="table table-striped">
+  <thead>
+    <th>Id</th>
+    <th>Nome</th>
+    <th>Sigla</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let curso of cursos">
+      <td><a routerLink="/curso/detalhe/{{curso.id}}">{{curso.id}}</a></td>
+      <td>{{curso.nome}}</td>
+      <td>{{curso.sigla}}</td>
+    </tr>
+  </tbody>
+</table>

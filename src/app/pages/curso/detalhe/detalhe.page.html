@@ -1,3 +1,20 @@
-<p>
-  curso-detalhe works!
-</p>
+<h2>
+  Curso
+</h2>
+<dl class="dl-horizontal">
+  <dt>Id</dt>
+  <dd>{{curso?.id}}</dd>
+  <dt>Nome</dt>
+  <dd>{{curso?.nome}}</dd>
+  <dt>Sigla</dt>
+  <dd>{{curso?.sigla}}</dd>
+  <dt>Descrição</dt>
+  <dd>{{curso?.descricao}}</dd>
+  <dt>Criado em</dt>
+  <dd>{{curso?.criadoEm}}</dd>
+  <dt>Alterado em</dt>
+  <dd>{{curso?.alteradoEm}}</dd>
+  <dt>Status</dt>
+  <dd>{{curso?.status}}</dd>
+</dl>
+<a class="btn btn-primary" routerLink="/curso">Voltar</a>
