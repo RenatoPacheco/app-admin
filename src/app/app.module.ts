@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { UrlSerializer } from '@angular/router';
+import { HttpModule } from '@angular/http';
+import 'rxjs/Rx';
 
 import { LowerCaseUrlSerializer } from './helpers/lower-case-url-serializer';
 
@@ -15,6 +17,7 @@ import { AuthService } from './services/auth/auth.service';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     AppRouting
   ],
   providers: [
